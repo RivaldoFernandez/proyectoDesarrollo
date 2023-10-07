@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>CRUD Citas - Clinica Vida</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Clinica Vida <span> Citas</span></h1>
+    </header>
+
+    <main class="main">
+        <div class="main-input">
+            <form action="">
+                <legend>Registrar cita</legend>
+
+                <div class="input-contenedor">
+                    <label for="">Nombre:</label>
+                    <input class="input" type="text">
+                </div>
+                
+                <div class="input-contenedor">
+                    <label for="">Apellido:</label>
+                    <input class="input" type="text">
+                </div>
+                
+
+                <div class="input-contenedor">
+                    <label for="">DNI:</label>
+                    <input class="input" type="text">
+                </div>
+                
+
+                <div class="input-contenedor">
+                    <label for="">Teléfono:</label>
+                    <input class="input" type="text">
+                </div>
+                
+
+                <div class="input-contenedor">
+                    <label for="">Dirección:</label>
+                    <input class="input" type="text">
+                </div>
+                
+
+                <div class="input-contenedor">
+                    <label for="">Especialidad:</label>
+                    <select class="input" name="opciones">
+                        <option value="opcion1">Medicina general</option>
+                        <option value="opcion2">Cardiología</option>
+                        <option value="opcion3">Ginecología</option>
+                        <option value="opcion4">Urología</option>
+                        <option value="opcion5">Pediatría</option>
+                        <option value="opcion6">Oftalmología</option>
+                        <option value="opcion7">Odontología</option>
+                        <option value="opcion8">Psicología</option>
+                        <option value="opcion9">Neurología</option>
+                        <option value="opcion10">Neumología</option>
+                    </select>
+                </div>
+                
+
+                <div class="input-contenedor">
+                    <label for="">Horario:</label>
+                    <select class="input" name="opciones">
+                        <option value="opcion1">8:00 - 8:30</option>
+                        <option value="opcion2">8:30 - 9:00</option>
+                        <option value="opcion3">9:00 - 9:30</option>
+                        <option value="opcion4">9:30 - 10:00</option>
+                        <option value="opcion5">10:00 - 10:30</option>
+                        <option value="opcion6">10:30 - 11:00</option>
+                        <option value="opcion7">11:00 - 11:30</option>
+                        <option value="opcion8">11:30 - 12:00</option>
+                        <option value="opcion9">12:00 - 12:30</option>
+                        <option value="opcion10">12:30 - 13:00</option>
+                    </select>
+                </div>
+                
+
+                <div class="input-contenedor">
+                    <label for="">Doctor:</label>
+                    <input class="input" type="text">
+                </div>
+                
+                <div class="submit">
+                    <button class="button-grande">Registrar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="registro">
+            <table>
+                <thead>
+                    <tr class="registro-fila">
+                        <th class="registro-fila-1">Id</th>
+                        <th class="registro-fila-2">Nombre</th>
+                        <th class="registro-fila-3">Apellido</th>
+                        <th class="registro-fila-4">DNI</th>
+                        <th class="registro-fila-5">Teléfono</th>
+                        <th class="registro-fila-6">Dirección</th>
+                        <th class="registro-fila-7">Especialidad</th>
+                        <th class="registro-fila-8">Horario</th>
+                        <th class="registro-fila-9">Doctor</th>
+                        <th class="registro-fila-10">Acciones</th>
+                    </tr>
+
+                    
+                </thead>
+                <tbody>
+                    <tr class="registro-fila">
+                        <td>1</td>
+                        <td>Diego</td>
+                        <td>Bejarano</td>
+                        <td>70118164</td>
+                        <td>967660693</td>
+                        <td>Jr. Lima 389, Cayma</td>
+                        <td>Psicologia</td>
+                        <td>8:00 - 8:30</td>
+                        <td> Dr. Guzmán</td>
+                        <td>
+                            <a class="button button-pequeno rojo" href="#">Actualizar</a>
+                            <a class="button button-pequeno verde" href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                    
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+    </footer>
+
+</body>
+</html>

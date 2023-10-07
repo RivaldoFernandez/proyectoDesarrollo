@@ -1,0 +1,213 @@
+/*--------------- Variables ------------------*/
+
+:root {
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --azul: #007BFF;
+    --blanco: #fff;
+    --verde: #8CC63F;
+    --gris: #ECECEC;
+    --azulMarino: #001F3F;
+
+}
+
+
+/*--------------- Generales ----------------*/
+html {
+    box-sizing: border-box;
+    font-family: var(--fuentePrincipal);
+    font-weight: 400;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+
+h1, h2 {
+    margin: 0;
+    padding:1rem;
+    color: var(--blanco);
+}
+
+span {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+/*---------------- Header -----------------*/
+.header {
+    background-color: var(--azul);
+    min-height: 10vh;
+    padding: 1rem 2rem;
+}
+
+
+/*---------------- Footer -----------------*/
+.footer {
+    background-color: var(--azul);
+    padding: 1rem;
+    min-height: 10vh;
+}
+
+/*---------------- Main -----------------*/
+.main {
+    display: flex;
+    padding: 2rem;
+    min-height: 79.7vh;
+    gap: 2rem;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.main-input {
+    width: 22rem;
+    background-color: #8CC63F;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.input-contenedor {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input {
+    width: 65%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.button-grande {
+    display: block;
+    padding: 0.5rem;
+    margin-top:2rem;
+    width: 8rem;
+}
+
+.button-pequeno {
+    display: block;
+    height: 2rem;
+    width: 5rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top:0.5rem;
+}
+
+.rojo {
+    background-color: var(--azulMarino);
+}
+
+.verde {
+    background-color: var(--verde);
+}
+
+.registro {
+    width: 80rem;
+    font-size: 0.8rem;
+}
+legend {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.registro-fila {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.registro-fila-1 {
+    width: 2rem;
+}
+
+.registro-fila-2 {
+    width: 5rem;
+}
+
+.registro-fila-3 {
+    width: 5rem;
+}
+
+.registro-fila-4 {
+    width: 5rem;
+}
+
+.registro-fila-5 {
+    width: 5rem;
+}
+
+.registro-fila-6 {
+    width: 5rem;
+}
+
+.registro-fila-7 {
+    width: 5rem;
+}
+
+.registro-fila-8 {
+    width: 5rem;
+}
+
+.registro-fila-9 {
+    width: 5rem;
+}
+
+.registro-fila-10 {
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;   
+}
+
+/* .registro-fila::after {
+    content:'';
+    width: 20px;
+    height: 20px;
+    background-color: #8CC63F;
+} */
+
+table {
+    border-collapse: collapse;
+}
+thead {
+    height:2rem;
+    font-weight: 300;
+    border-bottom: 1px solid var(--azulMarino);
+}
+
+th {
+    text-align: left;
+
+}
+
+
+
+
+.col {
+    font-weight: 300;
+    width: inherit;
+}
+
+
+
+
+
+
