@@ -89,9 +89,11 @@
             </div>
             
             <div class="submit">
-                <button class="button-grande">Actualizar</button>
+                <input type="hidden" name="codigo" value="<?php echo $persona->id; ?>">
+                <button class="button-grande" type="submit">Actualizar</button>
             </div>
 
+            
         </form>
     </div>
 </main>

@@ -5,6 +5,7 @@
     }
 
     include 'model/conexion.php';
+
     $codigo = $_POST['codigo'];
     $nombre = $_POST['txtNombre'];
     $apellido = $_POST['txtApellido'];
@@ -16,12 +17,14 @@
     $doctor = $_POST['txtDoctor'];
 
     $sentencia = $bd->prepare("UPDATE crud_clinica.cita SET nombre = ?, apellido = ?, dni= ?, telefono = ?, direccion = ?, 
-                                especialidad = ?, horario = ?, doctor = ? where id = ?;");
+                                especialidad = ?, horario = ?, doctor = ? WHERE id = ?;");
     $resultado = $sentencia->execute([$nombre, $apellido, $dni, $telefono, $direccion, $especialidad, $horario, $doctor, $codigo]);
-
+    
     if ($resultado === TRUE) {
         header('Location: index.php?mensaje=editado');
     } else {
         header('Location: index.php?mensaje=error');
         exit();
     }
+
+

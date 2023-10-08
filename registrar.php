@@ -1,5 +1,5 @@
 <?php
-print_r($_POST);
+//print_r($_POST);
 if (empty($_POST["txtNombre"]) || empty($_POST["txtApellido"]) || empty($_POST["txtDni"]) || 
     empty($_POST["txtTelefono"]) || empty($_POST["txtDireccion"]) || empty($_POST["txtEspecialidad"]) 
     || empty($_POST["txtHorario"]) || empty($_POST["txtDoctor"])) {
