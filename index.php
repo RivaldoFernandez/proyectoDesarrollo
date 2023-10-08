@@ -120,8 +120,8 @@
                         <td class=registro-fila-8><?php echo $dato->horario; ?></td>
                         <td class=registro-fila-9><?php echo $dato->doctor; ?></td>
                         <td class=registro-fila-10>
-                            <a class="button button-pequeno rojo" href="#">Actualizar</a>
-                            <a class="button button-pequeno verde" href="#">Eliminar</a>
+                            <a class="button button-pequeno rojo" href="actualizar.php?codigo=<?php echo $dato->id; ?>">Actualizar</a>
+                            <a onclick="return confirm('Estas seguro de eliminar?');" class="button button-pequeno verde" href="eliminar.php?codigo=<?php echo $dato->id; ?>">Eliminar</a>
                         </td>
 
                     </tr>

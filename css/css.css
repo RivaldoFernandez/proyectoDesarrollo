@@ -63,12 +63,17 @@ span {
     justify-content: space-between;
 }
 
+.centrar {
+    margin: 0 auto;
+}
+
 .main-input {
     width: 22rem;
     background-color: #8CC63F;
     padding: 1.5rem;
     border-radius: 0.5rem;
     font-size: 0.8rem;
+    height: 32rem;
 }
 
 .input-contenedor {
