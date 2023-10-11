@@ -6,7 +6,7 @@
     $persona = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
 
-    <main class="main">
+    <main id="main" class="main">
         <div class="main-input">
             <form action="registrar.php" method="POST">
                 <legend>Registrar cita</legend>
@@ -121,7 +121,7 @@
                         <td class=registro-fila-9><?php echo $dato->doctor; ?></td>
                         <td class=registro-fila-10>
                             <a class="actualizar-color" href="actualizar.php?codigo=<?php echo $dato->id; ?>"><span class="material-symbols-outlined">edit</span></a>
-                            <a class="eliminar-color" onclick="return confirm('Estas seguro de eliminar?');" href="eliminar.php?codigo=<?php echo $dato->id; ?>"><span class="material-symbols-outlined">delete</span></a>
+                            <a id="eliminar" class="eliminar-color" onclick="return confirm('Estas seguro de eliminar?');" href="eliminar.php?codigo=<?php echo $dato->id; ?>"><span class="material-symbols-outlined">delete</span></a>
                         </td>
 
                     </tr>
@@ -134,6 +134,7 @@
                     
             </table>
         </div>
+
     </main>
 
 
